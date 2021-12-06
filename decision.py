@@ -37,7 +37,7 @@ def mod_decision(saef_val, curr_support, freq_support):
     else:
         place_text = ". You are NOT eligible for modifications to your current child support" 
 
-    ret = "User's inputted current support: " + curr_support + " " + freq_support + " SAEF's calculated support: " + saef_val + " " +  freq_support + " percent difference: " + diff + place_text
+    ret = "User's inputted current support: " + str(curr_support) + " " + str(freq_support) + ", SAEF's calculated support: " + str(round(saef_val,2)) + " " +  freq_support +  ", percent difference: " + str(diff) + place_text
 
     return ret
 
