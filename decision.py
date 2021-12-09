@@ -32,7 +32,7 @@ def mod_decision(saef_val, curr_support, freq_support):
     else:
         return -1    
     
-    if diff >= 20:
+    if diff >= 20 and (curr_support > saef_val):
         place_text = ". You ARE eligible for modifications to your current child support"
     else:
         place_text = ". You are NOT eligible for modifications to your current child support" 
